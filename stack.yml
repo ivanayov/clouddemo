@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  clouds:
+    lang: go
+    handler: ./clouds
+    image: docwareiy/clouds:latest
+    environment:
+      dark: false
