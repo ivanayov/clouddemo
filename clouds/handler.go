@@ -34,7 +34,7 @@ func Handle(req []byte) string {
 		Dark: dark,
 	})
 	if err != nil {
-		return fmt.Sprintf("Internal server error with homepage template: %s", err.Error())
+		return fmt.Sprintf("Internal server error with homepage template: s", err.Error())
 	}
 
 	return string(tpl.Bytes())
